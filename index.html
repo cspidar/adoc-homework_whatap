@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.12">
+<title>과제: 사용 가이드 목차 작성</title>
+<link rel="stylesheet" href="./custom.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes"
+/>
+<script src="./asset/main.js"></script>
+
+<style>
+  .uiButton {
+    position: fixed;
+    right: 1rem;
+    z-index: 999;
+    cursor: pointer;
+    padding: 0.4rem 0.5rem;
+    min-height: 30px;
+    min-width: 70px;
+  }
+  .uiButton {
+    appearance: none;
+    background-color: var(--gray0);
+    border: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: var(--gray8);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+
+    outline: none;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 4px;
+  }
+
+  .uiButton:disabled {
+    pointer-events: none;
+  }
+
+  .uiButton:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  .uiButton.pdf {
+    bottom: 2.5rem;
+  }
+  .uiButton.toc {
+    bottom: 2.5rem;
+  }
+</style>
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>과제: 사용 가이드 목차 작성</h1>
+<div class="details">
+<span id="revnumber"> Whatap: Technical Writer | 지원자: 이길재</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_시작하기_전에">시작하기 전에</a></li>
+<li><a href="#_개편_방향성">개편 방향성</a></li>
+<li><a href="#_목차_마인드맵">목차 마인드맵</a></li>
+<li><a href="#_시작하기">1. <span class="green">시작하기</span></a>
+<ul class="sectlevel2">
+<li><a href="#_애플리케이션">1.1. <span class="green">애플리케이션</span></a></li>
+<li><a href="#_서버">1.2. <span class="green">서버</span></a>
+<ul class="sectlevel3">
+<li><a href="#_준비하기">1.2.1. <span class="green">준비하기</span></a></li>
+<li><a href="#_활용하기">1.2.2. 활용하기</a></li>
+<li><a href="#_관리하기">1.2.3. 관리하기</a></li>
+<li><a href="#_더_알아보기">1.2.4. 더 알아보기</a></li>
+</ul>
+</li>
+<li><a href="#_데이터베이스">1.3. <span class="green">데이터베이스</span></a></li>
+<li><a href="#_쿠버네티스">1.4. <span class="green">쿠버네티스</span></a></li>
+</ul>
+</li>
+<li><a href="#_준비하기_2">2. <span class="green">준비하기</span></a></li>
+<li><a href="#_활용하기_2">3. 활용하기</a></li>
+<li><a href="#_관리하기_2">4. 관리하기</a></li>
+<li><a href="#_더_알아보기_2">5. <span class="green">더 알아보기</span></a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="title">요구 사항</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>W_SERVER_DEMO (<a href="https://service.whatap.io" class="bare">https://service.whatap.io</a>) 내 기능에 대한 3Depth 목차 작성 및 MindMap 도구를 사용한 시각화</p>
+</li>
+<li>
+<p>현재 가이드(<a href="https://guide.whatap.io/)의" class="bare">https://guide.whatap.io/)의</a> 개편을 가정</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="exampleblock">
+<div class="title">평가 기준</div>
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>작성 의도와 선택 이유를 설명 필요</p>
+</li>
+<li>
+<p>과제 수행 중의 커뮤니케이션 역량</p>
+</li>
+<li>
+<p>정리된 Research 문서 품질</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_시작하기_전에">시작하기 전에</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>가이드의 개편을 가정하고 기존 문서를 검토하는 과정에서, W_SERVER_DEMO(<a href="https://service.whatap.io" class="bare">https://service.whatap.io</a>) 내의 기능만 언급하는 것은</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>목차를 구성하는 항목간 내용이 서로 연결되어 있기 때문에 작성 수준에 한계 존재</p>
+</li>
+<li>
+<p>기존 가이드 항목을 일부만 정리하는 것으로 인해 재사용이 힘든 1회성 업무로의 변질 우려</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>와 같은 문제점이 있다고 판단하여, 이 과제에서는 아래의 3가지 측면을 고려하여 사용자 가이드 목차를 작성했습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>가이드 개편을 가정한 전체 목차 정리: 1 Depth, 의도 기입</p>
+</li>
+<li>
+<p>개편을 전제로 리뉴얼된 '시작하기&#8217;의 '서버' 항목에 W_SERVER_DEMO(<a href="https://service.whatap.io" class="bare">https://service.whatap.io</a>) 기능 목차 작성: 3 Depth, 데모 기능 한정</p>
+</li>
+<li>
+<p>개편 방향성 수립: 과제 내 별도 챕터로 언급</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이 과제 문서의 목차와 가이드 개편을 가정한 전체 목차가 서로 일치하며, 안에 W_SERVER_DEMO 기능 목차가 포함되어 있습니다. 부분적 개편 의도는 해당 목차 내 서술했습니다.</p>
+</div>
+<hr>
+<div class="exampleblock">
+<div class="title">목차 색상의 의미</div>
+<div class="content">
+<div class="paragraph">
+<p>이 과제 문서의 목차 색상은 기존 가이드 목차 대비 변경점을 나타냅니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="green">항목 생성 &amp; 변경</span></p>
+</li>
+<li>
+<p><span class="blue">항목 이동</span></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="heading_rule" class="exampleblock">
+<div class="title">목차 명칭 작성 규칙</div>
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>0 Depth: 동사형 (활용하기)</p>
+</li>
+<li>
+<p>1 Depth: 명사형 (에이전트, 트랜잭션)</p>
+</li>
+<li>
+<p>2 Depth 이상</p>
+<div class="ulist">
+<ul>
+<li>
+<p>동사형: 사용법 (로그 설정하기)</p>
+</li>
+<li>
+<p>명사형: 정보 (지원 환경)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_개편_방향성">개편 방향성</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">구성</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>제품을 사용하기 위해 필요한 핵심 정보들을 우선 제공하는 것으로 사용자가 실제 사용까지 걸리는 시간을 최소화</p>
+</li>
+<li>
+<p>심화 기능은 기존 '배워보기' 항목인 '더 알아보기 (가칭)' 에서 학습하고 사용하도록 유도</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">내용</dt>
+<dd>
+<p>순서/상황에 무관하게 읽어도 문제없게 내용적 완결을 갖춘 수준을 1챕터 (2Depth)로 구성하여 독립 문서로 활용 가능하도록 제작</p>
+</dd>
+</dl>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_목차_마인드맵">목차 마인드맵</h2>
+<div class="sectionbody">
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_시작하기">1. <span class="green">시작하기</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>2Depth 해당 항목(애플리케이션, 서버, 데이터베이스, 쿠버네티스)을 모니터링 하기 위해 필요한 핵심 기능들을 따라 할 수 있는 시퀀스 형태로 제공합니다.</p>
+</li>
+<li>
+<p>전체 가이드 목차 구성과 같은 구조(준비하기 - 활용하기 - 관리하기 - 더 알아보기)로 일관된 방식의 설명을 제공하여, 이후 항목 문서에 대한 사전 경험 효과 전달</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_애플리케이션">1.1. <span class="green">애플리케이션</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_서버">1.2. <span class="green">서버</span></h3>
+<div class="sect3">
+<h4 id="_준비하기">1.2.1. <span class="green">준비하기</span></h4>
+<div class="sect4">
+<h5 id="_미리보기">1.2.1.1. <span class="green">미리보기</span></h5>
+<div class="paragraph">
+<p>기능 전체 맵, 사용 시나리오 기반의 가이드, 핵심 기능 시연 짧은 영상 (미정) 을 제공하여 사용자의 빠른 이해를 돕습니다.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_시작하기_전에_2">1.2.1.2. <span class="green">시작하기 전에</span></h5>
+<div class="paragraph">
+<p>가이드를 따라 하기 위한 환경 설정법과 설치 방법 제공합니다.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_활용하기">1.2.2. 활용하기</h4>
+<div class="sect4">
+<h5 id="_대시보드">1.2.2.1. 대시보드</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>위젯 (Wiget)</p>
+</li>
+<li>
+<p>컴파운드아이</p>
+</li>
+<li>
+<p>Flex 보드</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_분석">1.2.2.2. 분석</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>서버</p>
+<div class="ulist">
+<ul>
+<li>
+<p>서버 목록</p>
+</li>
+<li>
+<p>서버 상세</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>메트릭스</p>
+</li>
+<li>
+<p>큐브</p>
+</li>
+<li>
+<p>보고서</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_모니터링">1.2.2.3. 모니터링</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>로그</p>
+<div class="ulist">
+<ul>
+<li>
+<p>라이브 Tail</p>
+</li>
+<li>
+<p>탐색기</p>
+</li>
+<li>
+<p>설정</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_알림">1.2.2.4. 알림</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>이벤트 조건</p>
+</li>
+<li>
+<p>이벤트 수신</p>
+</li>
+<li>
+<p>이벤트 기록</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_서버_설정">1.2.2.5. 서버 설정</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>에이전트</p>
+<div class="ulist">
+<ul>
+<li>
+<p>제어와 상태 조회</p>
+</li>
+<li>
+<p>원격 파일 뷰어</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>환경 변수</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_더_보기">1.2.2.6. <span class="green">더 보기</span></h5>
+<div class="paragraph">
+<p>추가 및 심화 기능에 대한 안내와 링크 제공</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_관리하기">1.2.3. 관리하기</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>프로젝트 관리</p>
+</li>
+<li>
+<p>프로젝트 멤버</p>
+</li>
+<li>
+<p>에이전트 설치</p>
+</li>
+<li>
+<p>정비 계획</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_더_보기_2">1.2.3.1. <span class="green">더 보기</span></h5>
+<div class="paragraph">
+<p>추가 및 심화 기능에 대한 안내와 링크 제공</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_더_알아보기">1.2.4. 더 알아보기</h4>
+<div class="paragraph">
+<p>전체 제품군, 문서 전반에 대한 공통 가이드 제공 (애플리케이션 = 서버 = 데이터베이스 = 쿠버네티스)</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_데이터베이스">1.3. <span class="green">데이터베이스</span></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_쿠버네티스">1.4. <span class="green">쿠버네티스</span></h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_준비하기_2">2. <span class="green">준비하기</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>기존 '시작하기' + 기존 '설치하기'</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>기존 '시작하기' 와 '설치하기' 의 내용 구분이 모호한 점(다운로드, 설치 방법을 나누어 설명)이 있어, 첫 사용자 입장에서 혼란스러울 수 있습니다.<br>
+둘 다 서비스를 사용하기 위한 환경을 준비하는 과정이라는 공통점이 있기 때문에, 서비스 사용을 시작하기 전에 준비하고 설정하는 과정을 '준비하기' 로 통합하여 관리합니다.</p>
+</div>
+<div class="paragraph">
+<p>제품 사용에 필수적인 환경 설정, 설치 방법들만 등재합니다. 심화 기능의 환경 설정, 설치 방법은 신설된 '더 알아보기' 항목의 해당 심화 기능 문서 내부에 작성하여 하나의 독립된 문서로 활용될 수 있게끔 모듈화 합니다.</p>
+</div>
+<div class="paragraph">
+<p>기능 사용을 준비하는 것 외의 항목은 ('관리 - 사용자, 에이전트') 해당 챕터 ('관리하기') 로 이동합니다. 제품 사용에 핵심적인 부가 내용은 이 곳이 아닌 '시작하기' 챕터에서 사용법을 안내하고 관련 링크를 제공합니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_활용하기_2">3. 활용하기</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">문제점</dt>
+<dd>
+<p>개선 방안</p>
+</dd>
+<dt class="hdlist1">사용법이 파편화 되어 있고 설치, 기능 설명과 혼재되어 있어 내용 확인 전에 기능 파악이 어렵습니다.</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>2 Depth의 첫 항목은 '개요' 로 고정하고 전체 기능을 내용 제공합니다. 선택 기능이 있는 경우 적절한 항목을 사용할 수 있도록 돕습니다. ('시작하기 - 미리보기' 역할)</p>
+</li>
+<li>
+<p>문서 제목에 일관된 규칙을 적용하는 것(<a href="#heading_rule">목차 명칭 작성 규칙</a>)으로 문서를 읽기 전에 내용을 예상할 수 있도록 합니다.</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">기존 '활용하기' 항목의 비중이 너무 높습니다. 특히 기존 '배워보기' 항목과 차이가 큽니다.</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>필수 사용법이 아닌 내용(심화 기능, 부가 정보)은 '더 알아보기' 항목으로 옮겨 관리합니다.</p>
+</li>
+<li>
+<p>설치 관련 항목은 핵심 기능인 경우에 '시작하기 전에 - 설치' 항목으로 이동, 심화 기능은 '더 알아보기&#8217;로 이동합니다. 개념 관련 항목은 '배워보기' 항목으로 이동하고 '개요' 항목에서 안내합니다.</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_관리하기_2">4. 관리하기</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>실제 제품의 관리하기 항목과 일치시킵니다. (에이전트 설치, 정비 계획 추가 등)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_더_알아보기_2">5. <span class="green">더 알아보기</span></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>기존 '배워보기'</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>심화 기능과 추가 내용을 등재합니다.<br>
+이전 챕터 각 문서의 맺음부에서 간단한 설명과 링크를 제공하여 사용할 수 있도록 유도합니다.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+ Whatap: Technical Writer | 지원자: 이길재<br>
+Last updated 2022-04-26 01:20:53 +0900
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+<script>
+if (!hljs.initHighlighting.called) {
+  hljs.initHighlighting.called = true
+  ;[].slice.call(document.querySelectorAll('pre.highlight > code')).forEach(function (el) { hljs.highlightBlock(el) })
+}
+</script>
+</body>
+</html>

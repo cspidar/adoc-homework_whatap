@@ -1,0 +1,79 @@
+//넘버링 각 문서 시작에 써야 개별 문서 프리뷰에서 적용
+:sectnums:
+//자동 줄바꿈 각 문서 시작에 써야 개별 문서 프리뷰에서 적용
+:hardbreaks:
+
+:example-caption!:
+:example-number!:
+//==== block 앞 글자(example) + 숫자 (1.) 없애기
+:figure-caption!:
+
+
+[preface]
+== preface
+
+body
+
+[preface]
+== preface
+
+- Unordered list
+- Unordered list
+- Unordered list
+
+
+
+[preface]
+== preface icon
+
+[WARNING]
+====
+WARNING
+====
+
+[CAUTION]
+====
+CAUTION
+====
+
+[NOTE]
+====
+NOTE
+====
+
+[TIP]
+====
+TIP
+====
+
+[IMPORTANT]
+====
+IMPORTANT
+====
+
+<<<
+
+
+[decrete]
+=== image:images\warning.svg[Warning, , 30pt] 경고
+
+경고 사항
+
+
+
+
+[decrete]
+=== image:images\Caution.svg[Caution, 30pt] 주의
+
+주의 사항
+
+
+
+
+[decrete]
+=== image:images\Important.svg[Important, 30pt] 중요
+
+중요 사항
+
+
+
