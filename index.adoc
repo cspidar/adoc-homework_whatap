@@ -137,7 +137,7 @@
 [preface]
 == 목차 마인드맵
 
-
+image::images\Whatap_guide_TOC.svg[]
 
 <<<
 
