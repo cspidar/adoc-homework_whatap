@@ -108,10 +108,13 @@
 <div class="title">요구 사항</div>
 <div class="content">
 <div class="paragraph">
-<p>현재 가이드 (<a href="https://guide.whatap.io/" class="bare">https://guide.whatap.io/</a>) 의 개편을 가정한, W_SERVER_DEMO (<a href="https://service.whatap.io" class="bare">https://service.whatap.io</a>) 내 기능의 목차 작성</p>
+<p>W_SERVER_DEMO (<a href="https://service.whatap.io" class="bare">https://service.whatap.io</a>) 내 기능의 목차 작성</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>현재 가이드 (<a href="https://guide.whatap.io/" class="bare">https://guide.whatap.io/</a>) 개편 가정</p>
+</li>
 <li>
 <p>목차 작성: 3Depth 목차 작성</p>
 </li>
@@ -169,7 +172,20 @@
 <p>가이드 개편을 가정한 전체 목차 정리: 0 Depth, 개편 의도 기입</p>
 </li>
 <li>
-<p>개편을 전제로 리뉴얼된 W_SERVER_DEMO (<a href="https://service.whatap.io" class="bare">https://service.whatap.io</a>) 기능 목차 작성: '시작하기 - 서버', 3 Depth, 데모 기능 한정</p>
+<p>개편을 전제로 리뉴얼된 W_SERVER_DEMO (<a href="https://service.whatap.io" class="bare">https://service.whatap.io</a>) 기능 목차 작성</p>
+<div class="ulist">
+<ul>
+<li>
+<p>위치: '시작하기 - 서버'</p>
+</li>
+<li>
+<p>수준: 3 Depth, 이후 항목은 bullet 처리</p>
+</li>
+<li>
+<p>범위: 데모 기능 한정</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>개편 방향성 구상: 과제 내 별도 챕터(<a href="#renewal">개편 방향성</a>)로 정리</p>
@@ -288,7 +304,7 @@
 <p>신규 생성: 기존 '시작하기' 항목은 신설된 '준비하기' 항목의 일부로 이동합니다.</p>
 </li>
 <li>
-<p>전체 가이드 목차 구성과 같은 구조(준비하기 - 활용하기 - 관리하기 - 더 알아보기)로 일관된 방식의 설명을 제공하여, 이후 항목 문서에 대한 사전 경험 효과를 전달합니다.</p>
+<p>전체 가이드 목차 구성과 같은 구조 (준비하기 - 활용하기 - 관리하기 - 더 알아보기) 로 일관된 방식의 설명을 제공하여, 이후 항목 문서에 대한 사전 경험 효과를 전달합니다.</p>
 </li>
 <li>
 <p>1 Depth 해당 항목(애플리케이션, 서버, 데이터베이스, 쿠버네티스)을 모니터링 하기 위해 필요한 핵심 기능들을 따라 할 수 있는 시퀀스 형태로 제공합니다.</p>
@@ -312,7 +328,7 @@
 <div class="sect4">
 <h5 id="_시작하기_전에_2">1.2.1.2. <span class="green">시작하기 전에</span></h5>
 <div class="paragraph">
-<p>가이드를 따라 하기 위한 환경 설정법과 설치 방법 제공합니다.</p>
+<p>가이드를 따라 하기 위한 환경 설정과 설치 방법을 제공합니다.</p>
 </div>
 </div>
 </div>
@@ -428,7 +444,7 @@
 <div class="sect4">
 <h5 id="_더_보기">1.2.2.6. <span class="green">더 보기</span></h5>
 <div class="paragraph">
-<p>추가 및 심화 기능에 대한 안내와 링크 제공</p>
+<p>활용하기 관련 추가 및 심화 기능에 대한 안내와 링크 제공</p>
 </div>
 </div>
 </div>
@@ -453,14 +469,14 @@
 <div class="sect4">
 <h5 id="_더_보기_2">1.2.3.5. <span class="green">더 보기</span></h5>
 <div class="paragraph">
-<p>추가 및 심화 기능에 대한 안내와 링크 제공</p>
+<p>관리하기 관련 추가 및 심화 기능에 대한 안내와 링크 제공</p>
 </div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_더_알아보기">1.2.4. <span class="green">더 알아보기</span></h4>
 <div class="paragraph">
-<p>전체 제품군, 문서 전반에 대한 공통 가이드 제공 (애플리케이션 = 서버 = 데이터베이스 = 쿠버네티스)</p>
+<p>전체 제품군, 문서 전반에 대한 공통 가이드 (애플리케이션 = 서버 = 데이터베이스 = 쿠버네티스) 제공</p>
 </div>
 </div>
 </div>
@@ -481,7 +497,7 @@
 <ul>
 <li>
 <p>기존 <span class="blue">'시작하기'</span> + 기존 <span class="green">'설치하기'</span><br>
-기존 '시작하기' 와 '설치하기' 의 내용 구분이 모호한 점(다운로드, 설치 방법을 나누어 설명)이 있어, 첫 사용자 입장에서 혼란스러울 수 있습니다.<br>
+기존 '시작하기' 와 '설치하기' 의 내용 구분이 모호한 점 (다운로드, 설치 방법을 나누어 설명) 이 있어, 첫 사용자 입장에서 혼란스러울 수 있습니다.<br>
 둘 다 서비스를 사용하기 위한 환경을 준비하는 과정이라는 공통점이 있기 때문에, 서비스 사용을 시작하기 전에 준비하고 설정하는 과정을 '준비하기' 로 통합하여 관리합니다.</p>
 </li>
 <li>
@@ -560,7 +576,7 @@
 <div id="footer">
 <div id="footer-text">
  Whatap: Technical Writer | 지원자: 이길재<br>
-Last updated 2022-04-26 14:01:34 +0900
+Last updated 2022-04-26 14:54:13 +0900
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
