@@ -855,6 +855,9 @@ div.sect2 > h3 > span.image > img {
 .bold {
   font-weight: 700;
 }
+.underline {
+  text-decoration: underline;
+}
 
 .uiButton.pdf {
   display: none;
